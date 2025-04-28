@@ -103,8 +103,10 @@ ORIGIN
 
 `keywords`: Not sure (ex. RefSeq; RefSeq Select.).
 
---- Unique Feature Keys Found Across all 
+--- Unique Feature Keys Found Across all ---
+
 `['Bond', 'CDS', 'Protein', 'Region', 'Site', 'mat_peptide', 'misc_feature', 'proprotein', 'sig_peptide', 'source', 'transit_peptide']`
 
 --- Unique Feature Qualifier Keys Found Across All Files ---
+
 `['EC_number', 'GO_component', 'GO_function', 'GO_process', 'bio_material', 'bond_type', 'calculated_mol_wt', 'cell_line', 'chromosome', 'coded_by', 'db_xref', 'exception', 'experiment', 'gene', 'gene_synonym', 'geo_loc_name', 'inference', 'isolate', 'isolation_source', 'map', 'name', 'note', 'organelle', 'organism', 'product', 'region_name', 'ribosomal_slippage', 'sex', 'site_type', 'tissue_type', 'transl_table']`
