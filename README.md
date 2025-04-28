@@ -80,20 +80,31 @@ ORIGIN
 ## Avaliable Data Fields
 
 --- Unique Keys found from the Header Section ---
+
 `id`: (String) The primary identifier used in the LOCUS line (often the accession without the version).
+
 `date`: (String) Date of the last modification of the record (from LOCUS).
+
 `description`: (String) The descriptive title of the protein record (from DEFINITION).
-`comment`: (String) Free-text comments about the record
+
+`comment`: (String) Free-text comments about the record.
+
 `data_file_division`: (String) NCBI's category code (e.g., PRI=Primate, HUM=Human) from the LOCUS line.
-`organism`: (String) Scientific name of the source organism
+
+`organism`: (String) Scientific name of the source organism.
+
 `references`: (List) Publication details (authors, title, journal, PubMed ID) associated with the sequence.
-`source`: the source of the sequence (ex. Homo sapiens (human))
-`topology`: the topology of the sequence (ex. linear) 
-`ACCESSION`: not sure (ex. NP_001355183 XP_024308382)
-`keywords`: not sure (ex. RefSeq; RefSeq Select.)
+
+`source`: The source of the sequence (ex. Homo sapiens (human)).
+
+`topology`: The topology of the sequence (ex. linear).
+
+`ACCESSION`: Not sure (ex. NP_001355183 XP_024308382).
+
+`keywords`: Not sure (ex. RefSeq; RefSeq Select.).
 
 --- Unique Feature Keys Found Across all 
-['Bond', 'CDS', 'Protein', 'Region', 'Site', 'mat_peptide', 'misc_feature', 'proprotein', 'sig_peptide', 'source', 'transit_peptide']
+`['Bond', 'CDS', 'Protein', 'Region', 'Site', 'mat_peptide', 'misc_feature', 'proprotein', 'sig_peptide', 'source', 'transit_peptide']`
 
 --- Unique Feature Qualifier Keys Found Across All Files ---
-['EC_number', 'GO_component', 'GO_function', 'GO_process', 'bio_material', 'bond_type', 'calculated_mol_wt', 'cell_line', 'chromosome', 'coded_by', 'db_xref', 'exception', 'experiment', 'gene', 'gene_synonym', 'geo_loc_name', 'inference', 'isolate', 'isolation_source', 'map', 'name', 'note', 'organelle', 'organism', 'product', 'region_name', 'ribosomal_slippage', 'sex', 'site_type', 'tissue_type', 'transl_table']
+`['EC_number', 'GO_component', 'GO_function', 'GO_process', 'bio_material', 'bond_type', 'calculated_mol_wt', 'cell_line', 'chromosome', 'coded_by', 'db_xref', 'exception', 'experiment', 'gene', 'gene_synonym', 'geo_loc_name', 'inference', 'isolate', 'isolation_source', 'map', 'name', 'note', 'organelle', 'organism', 'product', 'region_name', 'ribosomal_slippage', 'sex', 'site_type', 'tissue_type', 'transl_table']`
