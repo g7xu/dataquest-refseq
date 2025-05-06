@@ -4,6 +4,7 @@ data analysis on protein data source that will be integrate into Biothings API
 # Pre-cleaned data file overview
 The data is stored in tabular format with headers, so we can directly load data with `\t` delimiter
 
+```
 https://ftp.ncbi.nlm.nih.gov/pub/CCDS/
 ├── current_mouse/
 │   ├── CCDS.current.txt
@@ -11,6 +12,7 @@ https://ftp.ncbi.nlm.nih.gov/pub/CCDS/
 └── current_human/
     ├── CCDS.current.txt
     └── CCDS_attributes.current.txt
+```
 
 # Expected data schema
 
