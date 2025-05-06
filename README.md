@@ -1,6 +1,16 @@
 # dataquest-refseq
 data analysis on protein data source that will be integrate into Biothings API
 
+## 🚧 To-Do
+
+- [ ] define interested column
+- [ ] report the problem of gene_id, ccds_id pair from two able 
+- [ ] typing issue
+  - [ ] ccds_id: string?
+  - [ ] gene_id: string?
+  - [ ] attribute: string? (it is notes)
+- [ ] Confirm! for missing value, we just remove the key value pair of that specific reocrd
+
 # Pre-cleaned data file overview
 The data is stored in tabular format with headers, so we can directly load data with `\t` delimiter
 
@@ -57,6 +67,7 @@ https://ftp.ncbi.nlm.nih.gov/pub/CCDS/
 }
 ```
 # Additional Comments
+4% of the data in ccds_table has attributes(side notes) and they were being recorded in the ccds_attributes_table
 ```
 Report for mouse_ccds_set but not in mouse_ccds_attributes_set:
 Count: 26742
