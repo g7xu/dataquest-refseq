@@ -1,6 +1,73 @@
 # dataquest-refseq
 data analysis on protein data source that will be integrate into Biothings API
 
+# Pre-cleaned data file overview
+The data is stored in tabular format with headers, so we can directly load data with `\t` delimiter
+
+https://ftp.ncbi.nlm.nih.gov/pub/CCDS/
+├── current_mouse/
+│   ├── CCDS.current.txt
+│   └── CCDS_attributes.current.txt
+└── current_human/
+    ├── CCDS.current.txt
+    └── CCDS_attributes.current.txt
+
+# Expected data schema
+
+## Interested data attributes
+`gene_id`: the gene ID
+
+`ccds_id`: the ccds ID
+
+`match_type`: Comparison with reference annotation sources (RefSeq vs. Ensembl)
+- In total there is 2 types: `Identical`, `Partial`
+
+`ccds_status`: the status of ccds. 
+
+- In total there is 8 status: `Candidate`, `Public`, `Reviewed, update pending`, `Reviewed, withdrawal pending`, `Under review, update`, `Under review, withdrawal`, `Withdrawn`, `Withdrawn, inconsistent annotation`
+
+`attribute`: the side notes for ccds
+- only 9 types
+- example: CDS uses downstream AUG
+- example: Inferred exon combination
+- example: Nonsense-mediated decay (NMD) candidate
+...
+
+
+## Mapping Example
+```
+{
+  "_id": "21957",
+  "ccds_ids": [
+    {
+      "ccds_id": "ccds12345.1",
+      "status": "public",
+      "match_type": "identical",
+      "attribute": "nonsense-mediated decay (nmd) candidate"
+    },
+    {
+      "ccds_id": "ccds67890.2",
+      "status": ["reviewed", "update pending"],
+      "match_type": "partial",
+      "attribute": "inferred exon combination"
+    }
+  ]
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
 # Data Source Introduction
 The data source is from [RefSeq](https://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/mRNA_Prot/). They come in forms of human
 "human.{number}.protein.gpff.gz". There are in total 199,055 records of protein sequences acorss 16 gpff files. 
@@ -109,4 +176,4 @@ ORIGIN
 
 --- Unique Feature Qualifier Keys Found Across All Files ---
 
-`['EC_number', 'GO_component', 'GO_function', 'GO_process', 'bio_material', 'bond_type', 'calculated_mol_wt', 'cell_line', 'chromosome', 'coded_by', 'db_xref', 'exception', 'experiment', 'gene', 'gene_synonym', 'geo_loc_name', 'inference', 'isolate', 'isolation_source', 'map', 'name', 'note', 'organelle', 'organism', 'product', 'region_name', 'ribosomal_slippage', 'sex', 'site_type', 'tissue_type', 'transl_table']`
+`['EC_number', 'GO_component', 'GO_function', 'GO_process', 'bio_material', 'bond_type', 'calculated_mol_wt', 'cell_line', 'chromosome', 'coded_by', 'db_xref', 'exception', 'experiment', 'gene', 'gene_synonym', 'geo_loc_name', 'inference', 'isolate', 'isolation_source', 'map', 'name', 'note', 'organelle', 'organism', 'product', 'region_name', 'ribosomal_slippage', 'sex', 'site_type', 'tissue_type', 'transl_table']` -->
