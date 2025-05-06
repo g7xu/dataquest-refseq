@@ -56,7 +56,28 @@ https://ftp.ncbi.nlm.nih.gov/pub/CCDS/
   ]
 }
 ```
+# Additional Comments
+```
+Report for mouse_ccds_set but not in mouse_ccds_attributes_set:
+Count: 26742
+Percentage: 96.82%
+Examples: [(74156, 'CCDS26678.1'), (404315, 'CCDS52592.1'), (20446, 'CCDS36379.1'), (15185, 'CCDS40845.1'), (19043, 'CCDS50199.1')]
 
+Report for mouse_ccds_attributes_set but not in mouse_ccds_set:
+Count: 4
+Percentage: 0.44%
+Examples: [(22022, 'CCDS89968.1'), (68644, 'CCDS90655.1'), (211535, 'CCDS90243.1'), (68644, 'CCDS90654.1')]
+
+Report for human_ccds_set but not in human_ccds_attributes_set:
+Count: 36342
+Percentage: 96.22%
+Examples: [(6039, 'CCDS9558.1'), (319101, 'CCDS8834.1'), (390195, 'CCDS31559.1'), (8193, 'CCDS46064.2'), (51030, 'CCDS42274.1')]
+
+Report for human_ccds_attributes_set but not in human_ccds_set:
+Count: 1
+Percentage: 0.07%
+Examples: [(117134596, 'CCDS93115.1')]
+```
 
 
 
