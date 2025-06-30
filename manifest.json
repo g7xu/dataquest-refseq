@@ -1,0 +1,29 @@
+{
+    "version": "0.2",
+    "requires" : [],
+    "dumper" : {
+        "data_url" : [
+            {
+                "remote": "https://ftp.ncbi.nlm.nih.gov/pub/CCDS/current_mouse/CCDS.current.txt",
+                "local": "mouse_CCDS.current.txt"
+            },
+            {
+                "remote": "https://ftp.ncbi.nlm.nih.gov/pub/CCDS/current_mouse/CCDS_attributes.current.txt",
+                "local": "mouse_CCDS_attributes.current.txt"
+            },
+            {
+                "remote": "https://ftp.ncbi.nlm.nih.gov/pub/CCDS/current_human/CCDS.current.txt",
+                "local": "human_CCDS.current.txt"
+            },
+            {
+                "remote": "https://ftp.ncbi.nlm.nih.gov/pub/CCDS/current_human/CCDS_attributes.current.txt",
+                "local": "human_CCDS_attributes.current.txt"
+            }
+        ]
+    },
+    "uploader" : {
+        "parser" : "data_parser:load_ccds",
+        "mapping": "mapping:get_customized_mapping",
+        "on_duplicates" : "error"
+    }
+}
