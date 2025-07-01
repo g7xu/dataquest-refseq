@@ -3,11 +3,12 @@
     "requires" : [],
     "dumper" : {
         "data_url" : [
-            "ttps://ftp.ncbi.nlm.nih.gov/pub/CCDS/current_mouse/CCDS.current.txt",
+            "https://ftp.ncbi.nlm.nih.gov/pub/CCDS/current_mouse/CCDS.current.txt",
             "https://ftp.ncbi.nlm.nih.gov/pub/CCDS/current_mouse/CCDS_attributes.current.txt",
             "https://ftp.ncbi.nlm.nih.gov/pub/CCDS/current_human/CCDS.current.txt",
             "https://ftp.ncbi.nlm.nih.gov/pub/CCDS/current_human/CCDS_attributes.current.txt"
-        ]
+        ],
+        "uncompress" : false
     },
     "uploader" : {
         "parser" : "data_parser:load_ccds",
