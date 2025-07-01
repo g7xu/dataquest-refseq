@@ -75,6 +75,8 @@ DESIRED_MAIN_ID_KEY = "_id"
 def load_ccds(data_folder:str):
     processed_data = dict()
 
+    print('Jason', len([f for f in os.listdir(data_folder)]))
+
     for file_path in FILES:
         with open(os.path.join(data_folder, file_path), 'r', newline='', encoding='utf-8') as tsvfile:
             header_line = tsvfile.readline()
