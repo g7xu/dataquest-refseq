@@ -94,6 +94,7 @@ def load_ccds(data_folder:str):
             for row_number, row in enumerate(reader, 1):
                 current_id_val_original = row.get(DESIRED_MAIN_ID_KEY, "")
                 ...
+                processed_data[row.get('_id')] = row.get('_id')
             
             for _id, related_info in processed_data.items():
                 yield {
