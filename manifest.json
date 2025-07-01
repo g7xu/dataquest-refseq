@@ -3,10 +3,22 @@
     "requires" : [],
     "dumper" : {
         "data_url" : [
-            "https://ftp.ncbi.nlm.nih.gov/pub/CCDS/current_mouse/CCDS.current.txt",
-            "https://ftp.ncbi.nlm.nih.gov/pub/CCDS/current_mouse/CCDS_attributes.current.txt",
-            "https://ftp.ncbi.nlm.nih.gov/pub/CCDS/current_human/CCDS.current.txt",
-            "https://ftp.ncbi.nlm.nih.gov/pub/CCDS/current_human/CCDS_attributes.current.txt"
+            {
+                "remote": "https://ftp.ncbi.nlm.nih.gov/pub/CCDS/current_mouse/CCDS.current.txt",
+                "local": "mouse_CCDS.current.txt"
+            },
+            {
+                "remote": "https://ftp.ncbi.nlm.nih.gov/pub/CCDS/current_mouse/CCDS_attributes.current.txt",
+                "local": "mouse_CCDS_attributes.current.txt"
+            },
+            {
+                "remote": "https://ftp.ncbi.nlm.nih.gov/pub/CCDS/current_human/CCDS.current.txt",
+                "local": "human_CCDS.current.txt"
+            },
+            {
+                "remote": "https://ftp.ncbi.nlm.nih.gov/pub/CCDS/current_human/CCDS_attributes.current.txt",
+                "local": "human_CCDS_attributes.current.txt"
+            }
         ],
         "uncompress" : false
     },
