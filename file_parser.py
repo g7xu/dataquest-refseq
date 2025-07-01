@@ -24,6 +24,8 @@ def process_ccds_files(file_paths):
     """
     processed_data = {}
 
+    print('Jason', len([f for f in os.listdir(file_path)]))
+
     for file_path in file_paths:
         print(f"Processing file: {file_path}...")
         if not os.path.exists(file_path):
