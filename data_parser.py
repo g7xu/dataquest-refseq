@@ -47,10 +47,12 @@ def parse_geneid_ccds_pair(data: dict):
     
     meta_info = [ccds_id]
     for search_key in DESIRED_ENTRY_KEYS:
-        try:
-            meta_info.append(data.get(search_key, "").lower())
-        except:
-            raise AttributeError(data)
+        search_result = data.get(search_key, "")
+        if search_result is None:
+            search_result = ""
+        else:
+            search_result = search_result.lower()
+        meta_info.append(search_result)
 
     return gene_id, tuple(meta_info)
 
